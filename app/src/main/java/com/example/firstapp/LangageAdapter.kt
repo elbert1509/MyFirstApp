@@ -11,7 +11,6 @@ import android.widget.TextView
 
 class LangageAdapter(val mContext: Context,  val values :Array<Langage> ) : ArrayAdapter<Langage>(mContext,0,values) {
 
-
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         return createView(position,convertView,parent)
     }

@@ -15,7 +15,7 @@ import android.widget.Toast
 import java.util.*
 
 class panierActivity : AppCompatActivity() {
-    @SuppressLint("ResourceType")
+  /*  @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_panier)
@@ -50,7 +50,7 @@ class panierActivity : AppCompatActivity() {
 
 
 
-    }
+    }*/
 }
 
 

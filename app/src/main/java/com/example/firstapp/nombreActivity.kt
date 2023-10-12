@@ -8,6 +8,8 @@ import android.view.View
 import android.widget.ImageButton
 import android.widget.Toast
 
+    private lateinit var  mp: MediaPlayer
+
 class nombreActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +25,7 @@ class nombreActivity : AppCompatActivity() {
         val nbr8 = findViewById<ImageButton>(R.id.imageButton08)
         val nbr9 = findViewById<ImageButton>(R.id.imageButton09)
         val nbr10 = findViewById<ImageButton>(R.id.imageButton10)
-        val mp = MediaPlayer.create(this,R.raw.p001)
+         mp = MediaPlayer.create(this,R.raw.p001)
 
         var cuLanguage = intent.getStringExtra("ChoixLange")
 
@@ -191,6 +193,16 @@ class nombreActivity : AppCompatActivity() {
             mp.start()
         }
 
+
+    }
+
+    override fun onPause() {
+        super.onPause()
+        // Arrête le son lorsque l'activité est mise en pause
+        if (mp.isPlaying) {
+            mp.stop()
+            mp.release()
+        }
 
     }
 }

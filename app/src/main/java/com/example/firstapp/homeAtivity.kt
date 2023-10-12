@@ -1,5 +1,6 @@
 package com.example.firstapp
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.media.MediaPlayer
 import android.net.Uri
@@ -16,21 +17,23 @@ class homeAtivity : AppCompatActivity() {
     lateinit var spinner: Spinner
     lateinit var selecLan : String
 
+    @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_ativity)
 
         spinner =findViewById(R.id.spinner2)
-        val linearLayout2 = findViewById<LinearLayout>(R.id.linearLayout2)
-        val linearLayout3 = findViewById<LinearLayout>(R.id.linearLayout3)
+        val linearLayout = findViewById<RelativeLayout>(R.id.linearLayout)
+        val linearLayout4 = findViewById<RelativeLayout>(R.id.linearLayout4)
+        /*val linearLayout3 = findViewById<LinearLayout>(R.id.linearLayout3)
         val linearLayout4 = findViewById<LinearLayout>(R.id.linearLayout4)
-        val linearLayout = findViewById<LinearLayout>(R.id.linearLayout)
+        val linearLayout = findViewById<LinearLayout>(R.id.linearLayout)*/
         val mp = MediaPlayer()
 
-        val langageList = arrayOf(
-            Langage(R.drawable.punu,"Punu"),
-            Langage(R.drawable.myene,"Myene"),
-            Langage(R.drawable.fang, "Fang"))
+             val langageList = arrayOf(
+                 Langage(R.drawable.punu,"Punu"),
+                 Langage(R.drawable.myene,"Myene"),
+                 Langage(R.drawable.fang, "Fang"))
 
 
         val adapter = LangageAdapter(this,langageList)
@@ -73,20 +76,20 @@ class homeAtivity : AppCompatActivity() {
             startActivity(intentToHome)
         }
 
-        linearLayout2.setOnClickListener{
+      linearLayout4.setOnClickListener{
           //  Toast.makeText(this, "2", Toast.LENGTH_LONG).show()
-            Intent(this, panierActivity::class.java ).also {
+            Intent(this, LecteurMusiqueActivity::class.java ).also {
                 startActivity(it)
             }
         }
-
+/*
         linearLayout3.setOnClickListener{
           //  Toast.makeText(this, "3", Toast.LENGTH_LONG).show()
         }
 
         linearLayout4.setOnClickListener{
             Toast.makeText(this, "4", Toast.LENGTH_LONG).show()
-        }
+        }*/
 
     }
 

@@ -2,6 +2,7 @@
     <string name="app_name">Talking</string>
     <string name="home_activity_title"> Acceuil</string>
     <string name="desc">FirstApp</string>
+    <string name="chiffres">Chiffres</string>
     <string-array name="langues">
         <item> Punu</item>
         <item> Fang </item>
