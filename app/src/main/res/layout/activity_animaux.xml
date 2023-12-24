@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".animaux"
+    android:background="#2596be">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="256dp"
+                android:layout_height="237dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="45dp"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/dog" />
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView1"
+                android:layout_width="256dp"
+                android:layout_height="237dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="45dp"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/cat" />
+
+
+        </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
@@ -18,17 +17,20 @@
         <entry key="..\:/Users/agouz/Documents/Projet/MyFirstApp/app/src/main/res/drawable/rounded_musique.xml" value="0.2985" />
         <entry key="..\:/Users/agouz/Documents/Projet/MyFirstApp/app/src/main/res/drawable/rounded_video.xml" value="0.2985" />
         <entry key="..\:/Users/agouz/Documents/Projet/MyFirstApp/app/src/main/res/drawable/shadow.xml" value="0.2985" />
+        <entry key="..\:/Users/agouz/Documents/Projet/MyFirstApp/app/src/main/res/layout/activity_animaux.xml" value="0.26927083333333335" />
+        <entry key="..\:/Users/agouz/Documents/Projet/MyFirstApp/app/src/main/res/layout/activity_camera.xml" value="0.2911458333333333" />
         <entry key="..\:/Users/agouz/Documents/Projet/MyFirstApp/app/src/main/res/layout/activity_home_ativity.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/agouz/Documents/Projet/MyFirstApp/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/agouz/Documents/Projet/MyFirstApp/app/src/main/res/layout/activity_nombre.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/agouz/Documents/Projet/MyFirstApp/app/src/main/res/layout/activity_panier.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/agouz/Documents/Projet/MyFirstApp/app/src/main/res/layout/item_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/agouz/Documents/Projet/MyFirstApp/app/src/main/res/layout/item_lottie.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/agouz/Documents/Projet/MyFirstApp/app/src/main/res/layout/lecteur_musique.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/agouz/Documents/Projet/MyFirstApp/app/src/main/res/layout/rounded_blue_background.xml" value="0.35260416666666666" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

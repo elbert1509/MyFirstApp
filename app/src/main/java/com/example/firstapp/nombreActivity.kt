@@ -8,7 +8,7 @@ import android.view.View
 import android.widget.ImageButton
 import android.widget.Toast
 
-    private lateinit var  mp: MediaPlayer
+    lateinit var  mp: MediaPlayer
 
 class nombreActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

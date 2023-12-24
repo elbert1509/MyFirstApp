@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#8cd08c"
+    android:orientation="vertical">
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btnOpenCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rounded_histoire"
+        android:text="@string/button" />
+
+    <Button
+
+        android:id="@+id/btnOpenCamera2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:background="@drawable/rounded_animaux"
+        android:text="sample" />
+
+</LinearLayout>
+
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/java_camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+
+
+
+
+
+    <!-- You can add an ImageView here to display the captured image if you want -->
+
+</LinearLayout>

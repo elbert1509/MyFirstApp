@@ -40,10 +40,18 @@ class LecteurMusiqueActivity : AppCompatActivity() {
         val playlist = generateMusic()
         var adapter = MusiqueAdapter(this,playlist)
 
-        mediaPlayer = MediaPlayer.create(this,rawUser[0])
+
+
+
+        mediaPlayer = MediaPlayer.create(this, rawUser[0])
+
 
         listView.adapter = adapter
         listView.setOnItemClickListener { _, _, position, _ ->
+
+
+            //mediaPlayer = MediaPlayer.create(this, rawUser[position])
+
             positionMusique = 0
             ivPlay.setImageResource(android.R.drawable.ic_media_pause)
 
@@ -218,6 +226,23 @@ class LecteurMusiqueActivity : AppCompatActivity() {
                 "04.22"
             ),
         )
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        if (::mediaPlayer.isInitialized) {
+            mediaPlayer.release()
+        }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        // Arrête le son lorsque l'activité est mise en pause
+        if (mediaPlayer.isPlaying) {
+            mediaPlayer.stop()
+            mediaPlayer.release()
+        }
+
     }
 
 

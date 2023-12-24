@@ -14,3 +14,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "FirstApp"
 include ':app'
+include ':OpenCVLibrary3414'
+include ':javaopencvlib'
+include ':OpenCV'
