@@ -31,7 +31,6 @@ class Camera : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(binding.root)
-
         init()
 
 
@@ -40,8 +39,13 @@ class Camera : AppCompatActivity() {
     private fun init() = binding.apply {
         val intent = Intent(this@Camera, FaceActivity::class.java)
 
-        btnOpenCamera2.setOnClickListener {
+        lunetteBleu.setOnClickListener {
             intent.putExtra("source", "sample1")
+            startActivity(intent)
+        }
+
+        lunetteBlack.setOnClickListener {
+            intent.putExtra("source", "black")
             startActivity(intent)
         }
 

@@ -37,6 +37,7 @@ class FaceActivity : AppCompatActivity() {
 
         source = when (intent.getStringExtra("source")){
             "sample1" -> R.raw.blue_sunglasses
+            "black"->R.raw.black
 
             else -> R.raw.black
         }
@@ -44,7 +45,7 @@ class FaceActivity : AppCompatActivity() {
 
         arFragment = supportFragmentManager.findFragmentById(R.id.face_frag) as ArFragment
         arFragment.arSceneView.cameraStreamRenderPriority = Renderable.RENDER_PRIORITY_FIRST
-               arFragment.arSceneView.scene.addOnUpdateListener {
+        arFragment.arSceneView.scene.addOnUpdateListener {
                    if (faceRenderable != null && faceTexture != null) {
                        addTrackedFaces()
                        removeUntrackedFaces()

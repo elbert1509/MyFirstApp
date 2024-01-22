@@ -27,7 +27,7 @@ class homeAtivity : AppCompatActivity() {
         val linearLayout4 = findViewById<RelativeLayout>(R.id.linearLayout4)
         val layoutAnimaux = findViewById<RelativeLayout>(R.id.linearLayout3)
         val linearcamera = findViewById<RelativeLayout>(R.id.linearLayout5)
-        /*val linearLayout = findViewById<LinearLayout>(R.id.linearLayout)*/
+        val linearVideo = findViewById<RelativeLayout>(R.id.linearLayout6)
         val mp = MediaPlayer()
 
         val langageList = arrayOf(
@@ -93,6 +93,15 @@ class homeAtivity : AppCompatActivity() {
         linearcamera.setOnClickListener {
             Toast.makeText(this, "4", Toast.LENGTH_LONG).show()
             Intent(this, Camera::class.java).also {
+                startActivity(it)
+            }
+
+        }
+
+
+        linearVideo.setOnClickListener {
+            Toast.makeText(this, "5", Toast.LENGTH_LONG).show()
+            Intent(this, Video::class.java).also {
                 startActivity(it)
             }
 
